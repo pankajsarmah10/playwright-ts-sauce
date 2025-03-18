@@ -29,8 +29,6 @@ test.describe("Checkout Process", () => {
     });
 
     await test.step("Login to the application", async () => {
-      console.log("###########Username:" + username);
-      console.log("###########Password:" + password);
       await loginPage.login(decrypt(username), decrypt(password));
     });
     const itemsToAdd = [0, 1, 2, 3]; //Add first 4 items
