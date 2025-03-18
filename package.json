@@ -1,0 +1,39 @@
+{
+  "name": "playwright-ts-sauce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headless": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:chrome": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "setup-credentials": "ts-node utils/setup_credentials.ts"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "e2e",
+    "typescript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@playwright/test": "^1.51.1",
+    "@types/crypto-js": "^4.2.2",
+    "@types/node": "^22.13.10",
+    "crypto-js": "^4.2.0",
+    "eslint": "^9.22.0",
+    "globals": "^16.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.1"
+  }
+}
