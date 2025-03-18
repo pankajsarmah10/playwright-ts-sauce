@@ -16,10 +16,6 @@ jobs:
         shardIndex: [1, 2, 3]
         shardTotal: [3]
 
-    container:
-      image: mcr.microsoft.com/playwright:v1.48.1-jammy
-      options: --user 1001
-
     steps:
       - uses: actions/checkout@v3
 
@@ -31,9 +27,6 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-
-      - name: Set user as root
-        run: USER root
 
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
