@@ -104,7 +104,7 @@ To set up credentials:
 npm run setup-credentials
 ```
 
-For production use, set the `SALT` environment variable to a secure value. Default SALT value is set to '2025March' in the file `utils/encrypt_credential.ts`
+For production use, set the `SALT` environment variable to a secure value. Default SALT value is set to '2025March' in the file `utils/encrypt_credential.ts`. This is meant for local execution only.
 
 ## CI/CD Pipeline
 
