@@ -114,4 +114,4 @@ The project includes a GitHub Actions workflow that:
 2. Generates and uploads test reports as artifacts
 3. Runs ESLint to enforce code quality standards
 
-To use the workflow, add the `SALT` secret to your GitHub repository.
+A Github repository secret `SALT` is configured for this repository. The framework uses this secret to encrypt/decrypt user credentials. To use it in your own repository, create a repository secret `SALT` and assign a value.
